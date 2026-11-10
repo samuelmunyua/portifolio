@@ -5,33 +5,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samuel Munyua Gicheru | IT Portfolio</title>
+
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f4f7fb;
   color: #243247;
   line-height: 1.7;
 }
+
 header {
   background: #101d35;
   color: white;
   text-align: center;
   padding: 65px 20px;
 }
-header h1 { font-size: 36px; margin-bottom: 10px; }
-header p { color: #cbd5e1; }
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #d5dfeb;
+  margin: 5px;
+}
+
+.contact-top {
+  margin-top: 20px;
+}
+
+.contact-top a {
+  display: inline-block;
+  color: white;
+  background: #087e8b;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
 nav {
   background: #172945;
   padding: 15px;
   text-align: center;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 12px;
+  display: inline-block;
 }
-main { max-width: 950px; margin: auto; padding: 25px 18px; }
+
+main {
+  max-width: 950px;
+  margin: auto;
+  padding: 25px 18px;
+}
+
 section {
   background: white;
   padding: 25px;
@@ -39,7 +81,12 @@ section {
   border-radius: 12px;
   box-shadow: 0 3px 12px #0000000d;
 }
-h2 { color: #087e8b; margin-bottom: 12px; }
+
+h2 {
+  color: #087e8b;
+  margin-bottom: 15px;
+}
+
 .skills span {
   display: inline-block;
   background: #e2f2f4;
@@ -48,32 +95,59 @@ h2 { color: #087e8b; margin-bottom: 12px; }
   margin: 5px;
   border-radius: 20px;
 }
+
 .project {
   border-left: 4px solid #087e8b;
-  padding: 12px 16px;
+  padding: 15px;
   margin: 15px 0;
   background: #f7fafc;
 }
-a { color: #087e8b; }
-.contact a { display: inline-block; margin: 8px 12px 0 0; }
+
+.contact-details p {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-details a {
+  color: #087e8b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 footer {
   background: #101d35;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 @media(max-width:600px) {
-  header h1 { font-size: 28px; }
-  nav a { display: inline-block; margin: 5px; }
+  header h1 {
+    font-size: 27px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>Samuel Munyua Gicheru</h1>
-  <p>BSc Information Technology Student | Aspiring Software Developer</p>
-  <p>Kirinyaga University | Kenya</p>
+  <p>BSc Information Technology Student</p>
+  <p>Aspiring Software Developer | Kenya</p>
+
+  <div class="contact-top">
+    <a href="mailto:samuelmunyu67@gmail.com">Email Me</a>
+    <a href="tel:+254708825800">Call Me</a>
+    <a href="https://wa.me/254708825800">WhatsApp</a>
+  </div>
+
+  <p>Email: samuelmunyu67@gmail.com</p>
+  <p>Phone: +254 708 825 800</p>
 </header>
 
 <nav>
@@ -85,13 +159,15 @@ footer {
 </nav>
 
 <main>
+
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am a Bachelor of Science in Information Technology student
-    at Kirinyaga University. I am interested in software development,
-    programming, and technology. I enjoy learning new skills and
-    applying my knowledge to practical projects.
+    I am a Bachelor of Science in Information Technology
+    student at Kirinyaga University. I am interested in
+    software development, programming and technology.
+    I enjoy learning new skills and applying my knowledge
+    to practical projects.
   </p>
 </section>
 
@@ -105,21 +181,30 @@ footer {
     <span>HTML</span>
     <span>CSS</span>
   </div>
+
   <h3>Languages</h3>
   <p>English and Kiswahili</p>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
+
   <div class="project">
     <h3>Personal IT Portfolio Website</h3>
-    <p>A personal website created using HTML and CSS to showcase
-    my education, technical skills, and development journey.</p>
+    <p>
+      A personal website created using HTML and CSS
+      to showcase my education, technical skills and
+      development journey.
+    </p>
   </div>
+
   <div class="project">
     <h3>Programming Practice</h3>
-    <p>Academic programming exercises using Python, Java, C,
-    and C++ to strengthen my problem-solving skills.</p>
+    <p>
+      Academic programming exercises using Python,
+      Java, C and C++ to strengthen my problem-solving
+      and programming skills.
+    </p>
   </div>
 </section>
 
@@ -130,33 +215,38 @@ footer {
   <p>Currently pursuing my second year of study.</p>
 </section>
 
-
-<section id="contact" class="contact">
+<section id="contact">
   <h2>Contact Me</h2>
 
-  <p><strong>Email:</strong>
-    <a href="mailto:samuelmunyu67@gmail.com">
-      samuelmunyu67@gmail.com
-    </a>
-  </p>
+  <div class="contact-details">
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:samuelmunyu67@gmail.com">
+        samuelmunyu67@gmail.com
+      </a>
+    </p>
 
-  <p><strong>Phone:</strong>
-    <a href="tel:+254708825800">
-      +254 708 825 800
-    </a>
-  </p>
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+254708825800">
+        +254 708 825 800
+      </a>
+    </p>
 
-  <p><strong>WhatsApp:</strong>
-    <a href="https://wa.me/254708825800" target="_blank">
-      Chat with me on WhatsApp
-    </a>
-  </p>
+    <p>
+      <strong>WhatsApp:</strong>
+      <a href="https://wa.me/254708825800">
+        Chat with me on WhatsApp
+      </a>
+    </p>
 
-  <p><strong>GitHub:</strong>
-    <a href="https://github.com/samuelmunyua" target="_blank">
-      View my GitHub profile
-    </a>
-  </p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/samuelmunyua" target="_blank">
+        View my GitHub Profile
+      </a>
+    </p>
+  </div>
 </section>
 
 </main>
