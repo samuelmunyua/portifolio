@@ -1,28 +1,146 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samuel Munyua Gicheru</title>
+<title>Samuel Munyua Gicheru | IT Portfolio</title>
 <style>
-body{background:#0a0a0a;color:white;font-family:sans-serif;text-align:center;padding:40px}
-.btn{background:white;color:black;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin:8px}
-.card{background:#18181b;padding:20px;border-radius:20px;margin-top:20px;text-align:left}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #243247;
+  line-height: 1.7;
+}
+header {
+  background: #101d35;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+header h1 { font-size: 36px; margin-bottom: 10px; }
+header p { color: #cbd5e1; }
+nav {
+  background: #172945;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+main { max-width: 950px; margin: auto; padding: 25px 18px; }
+section {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+h2 { color: #087e8b; margin-bottom: 12px; }
+.skills span {
+  display: inline-block;
+  background: #e2f2f4;
+  color: #075b66;
+  padding: 7px 13px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.project {
+  border-left: 4px solid #087e8b;
+  padding: 12px 16px;
+  margin: 15px 0;
+  background: #f7fafc;
+}
+a { color: #087e8b; }
+.contact a { display: inline-block; margin: 8px 12px 0 0; }
+footer {
+  background: #101d35;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width:600px) {
+  header h1 { font-size: 28px; }
+  nav a { display: inline-block; margin: 5px; }
+}
 </style>
 </head>
 <body>
-<h1>Samuel Munyua Gicheru</h1>
-<p>Mobile App Developer | Nairobi, Kenya</p>
-<p>0708825800<br>samuelmunyua67@gmail.com</p>
 
-<a class="btn" href="https://wa.me/254708825800">WhatsApp Me</a>
-<a class="btn" href="mailto:samuelmunyua67@gmail.com">Email Me</a>
+<header>
+  <h1>Samuel Munyua Gicheru</h1>
+  <p>BSc Information Technology Student | Aspiring Software Developer</p>
+  <p>Kirinyaga University | Kenya</p>
+</header>
 
-<div class="card">
-<h3>Binary Converter App</h3>
-<p style="color:#aaa">Converts Decimal, Binary, Octal, Hex - Built for CS students</p>
-<a href="https://github.com/samuelmunyua" style="color:#a8d5a2">View on GitHub →</a>
-</div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<p style="margin-top:30px;color:#666;font-size:12px">© 2026 Samuel Munyua</p>
+<main>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Bachelor of Science in Information Technology student
+    at Kirinyaga University. I am interested in software development,
+    programming, and technology. I enjoy learning new skills and
+    applying my knowledge to practical projects.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Java</span>
+    <span>C Programming</span>
+    <span>C++</span>
+    <span>HTML</span>
+    <span>CSS</span>
+  </div>
+  <h3>Languages</h3>
+  <p>English and Kiswahili</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Personal IT Portfolio Website</h3>
+    <p>A personal website created using HTML and CSS to showcase
+    my education, technical skills, and development journey.</p>
+  </div>
+  <div class="project">
+    <h3>Programming Practice</h3>
+    <p>Academic programming exercises using Python, Java, C,
+    and C++ to strengthen my problem-solving skills.</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <h3>Kirinyaga University</h3>
+  <p>Bachelor of Science in Information Technology</p>
+  <p>Currently pursuing my second year of study.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:samuelmunyu67@gmail.com">samuelmunyu67@gmail.com</a></p>
+  <p>Phone: <a href="tel:+254708825800">+254 708 825 800</a></p>
+  <p>GitHub: <a href="https://github.com/samuelmunyua" target="_blank">View my GitHub profile</a></p>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Samuel Munyua Gicheru | IT Portfolio</p>
+</footer>
+
 </body>
 </html>
